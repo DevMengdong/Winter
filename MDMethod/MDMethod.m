@@ -9,7 +9,6 @@
 #import "MDMethod.h"
 #import <CommonCrypto/CommonDigest.h>
 #import <objc/runtime.h>
-#import "AppDelegate.h"
 //#import "QMainDetailImageView.h"
 //#import "QMainEmptView.h"
 

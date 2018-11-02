@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Winter"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.description  = "some method ObjectC"
   s.author       = { "limengdong" => "1903345463@qq.com" }
   s.homepage     = "https://github.com/DevMengdong/Winter"
@@ -9,11 +9,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/DevMengdong/Winter", :tag => "#{s.version}" }
   s.license      = { :type => "MIT", :file => "LICENSE"}
   s.platform 	 = :ios, '7.0'
-  s.source_files  = "MDMethod/*"
-		    "MDMethod/MDMethod/*.{h,m}"
-		    "MDMethod/**/*.h"
-		    "MDevKit/*"
-		    "MDevKit/MDevKit/*.{h,m}"
+  s.source_files = "MDMethod"
   s.exclude_files = "Classes/Exclude"
   
 end
