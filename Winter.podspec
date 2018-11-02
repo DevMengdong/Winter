@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Winter"
-  s.version      = "0.0.1"
+  s.version      = "1.0.1"
   s.description  = "some method ObjectC"
   s.author       = { "limengdong" => "1903345463@qq.com" }
   s.homepage     = "https://github.com/DevMengdong/Winter"
@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
   s.source_files  = "MDMethod/*"
 		    "MDMethod/MDMethod/*.{h,m}"
 		    "MDMethod/**/*.h"
-		    "MDFmdb/*"
-		    "MDFmdb/MDFmdb/*.{h,m}"
+		    "MDevKit/*"
+		    "MDevKit/MDevKit/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
   
 end
