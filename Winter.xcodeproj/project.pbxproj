@@ -14,7 +14,7 @@
 		99C594F8218AEC6600FBADEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C594F6218AEC6600FBADEC /* LaunchScreen.storyboard */; };
 		99C594FB218AEC6600FBADEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C594FA218AEC6600FBADEC /* main.m */; };
 		99C59509218AECBC00FBADEC /* MDMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C59502218AECBC00FBADEC /* MDMethod.m */; };
-		99C5950A218AECBC00FBADEC /* MDFmdb.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C59503218AECBC00FBADEC /* MDFmdb.m */; };
+		99FEA3EA218BE64E000B2B39 /* MDevKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FEA3E9218BE64E000B2B39 /* MDevKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +29,9 @@
 		99C594F9218AEC6600FBADEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99C594FA218AEC6600FBADEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		99C59502218AECBC00FBADEC /* MDMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDMethod.m; sourceTree = "<group>"; };
-		99C59503218AECBC00FBADEC /* MDFmdb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDFmdb.m; sourceTree = "<group>"; };
 		99C59505218AECBC00FBADEC /* MDMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDMethod.h; sourceTree = "<group>"; };
-		99C59506218AECBC00FBADEC /* MDFmdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDFmdb.h; sourceTree = "<group>"; };
+		99FEA3E8218BE64E000B2B39 /* MDevKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDevKit.h; sourceTree = "<group>"; };
+		99FEA3E9218BE64E000B2B39 /* MDevKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDevKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +83,8 @@
 			children = (
 				99C59505218AECBC00FBADEC /* MDMethod.h */,
 				99C59502218AECBC00FBADEC /* MDMethod.m */,
-				99C59506218AECBC00FBADEC /* MDFmdb.h */,
-				99C59503218AECBC00FBADEC /* MDFmdb.m */,
+				99FEA3E8218BE64E000B2B39 /* MDevKit.h */,
+				99FEA3E9218BE64E000B2B39 /* MDevKit.m */,
 			);
 			path = MDMethod;
 			sourceTree = "<group>";
@@ -159,7 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99C5950A218AECBC00FBADEC /* MDFmdb.m in Sources */,
+				99FEA3EA218BE64E000B2B39 /* MDevKit.m in Sources */,
 				99C594F0218AEC6500FBADEC /* ViewController.m in Sources */,
 				99C594FB218AEC6600FBADEC /* main.m in Sources */,
 				99C594ED218AEC6500FBADEC /* AppDelegate.m in Sources */,

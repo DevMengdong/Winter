@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <MJRefresh.h>
-#import "MDFmdbMethod.h"
-#import "MDFmdb.h"
+#import <UIKit/UIKit.h>
+#import "MDevKit.h"
 
 typedef void(^FieldChangeHandle)(NSString *fieldOutput);
 
@@ -33,10 +32,10 @@ typedef NS_ENUM(NSInteger, MDMethod_APP_NAME) {
 //字符串转cgfloat
 #define MDMethodStrTofloat(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? 0. : [str floatValue])
 
-//nsinteger转字符串
+//NSInteger转字符串
 #define MDMethodIntToStr(figure) ([NSString stringWithFormat:@"%ld", figure])
 
-//cgfloat转字符串
+//CGFloat转字符串
 #define MDMethodFloatToStr(figure) ([NSString stringWithFormat:@"%lf", figure])
 
 /// 获取启动图
@@ -53,9 +52,6 @@ typedef NS_ENUM(NSInteger, MDMethod_APP_NAME) {
 
 /// 判断是否安装程序
 + (BOOL)haveInstallApp:(MDMethod_APP_NAME)appName;
-
-/// 根据传入的可变数组、关键字排序
-+ (void)sortArray:(NSMutableArray *)array With:(NSString *)keyword;
 
 /// 根据classname获取控件
 + (UIView *)generateViewWithNib:(NSString *)className;
@@ -76,7 +72,7 @@ typedef NS_ENUM(NSInteger, MDMethod_APP_NAME) {
 + (NSInteger)getVerifyCodeTime;
 
 /// 跳转登录
-+ (void)presentLoginViewController;
++ (void)presentLoginViewController:(UIViewController *)loginVc;
 
 /// json转字典
 + (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString;
@@ -87,14 +83,7 @@ typedef NS_ENUM(NSInteger, MDMethod_APP_NAME) {
 /// float保留2位小数
 + (CGFloat)reserveDecimals:(CGFloat)floatNum;
 
-//图片转data
-/**
- * 压缩图片到指定文件大小
- *
- * @param image 目标图片
- * @param maxLength 目标大小（kb）
- *
- */
+/// 压缩图片到指定文件大小
 + (NSData *)compressOriginalImage:(UIImage *)image toMaxDataSizeKBytes:(CGFloat)maxLength;
 
 /// 时间戳 - 时间
@@ -122,54 +111,33 @@ typedef NS_ENUM(NSInteger, MDMethod_APP_NAME) {
 /// 获取Caches目录路径
 + (NSString *)getCachesPath;
 
-/*s*
- *  获取path路径下文件夹的大小
- *
- *  @param path 要获取的文件夹 路径
- *
- *  @return 返回path路径下文件夹的大小
- */
+/// 获取path路径下文件夹的大小
 + (NSString *)getCacheSizeWithFilePath:(NSString *)path;
 
-/**
- *  清除path路径下文件夹的缓存
- *
- *  @param path  要清除缓存的文件夹 路径
- *
- *  @return 是否清除成功
- */
+/// 清除path路径下文件夹的缓存
 + (BOOL)clearCacheWithFilePath:(NSString *)path;
 
-/*
- 
- 根据传入的字符串获取二维码图片
- 
- */
+/// 根据传入的字符串获取二维码图片
++ (UIImage *)generateQRCodeWithCode:(NSString *)code;
 
-+ (UIImage *)getErCodeWithString:(NSString *)dataString;
+/// 根据传入的字符串获取条形码
++ (UIImage *)generateBarCodeWithCode:(NSString *)code size:(CGSize)size;
 
-/*
- 
- * 传入数组、关键字(非必传，如果不传，则认为数组元素为字符串)，根据拼音排序，并返回一个浅排序数组（只是单纯排序），一个是深排序（排序，并按首字母分类）
- 
- */
-+ (NSArray *)getSortArrayByArray:(NSArray *)inpuArray keyword:(NSString *)keyword;
+/// 根据传入的可变数组、关键字排序
++ (void)sortArray:(NSMutableArray *)array With:(NSString *)keyword;
 
-/*
- 
- * 传入数组、关键字(非必传，如果不传，则认为数组元素为字符串)，根据拼音排序，并返回一个深排序（排序，并按首字母分类）
- 
- */
-+ (NSArray *)getDeepSortArrayByArray:(NSArray *)inpuArray keyword:(NSString *)keyword;
+/// 传入数组、关键字(非必传，如果不传，则认为数组元素为字符串)，根据拼音排序，并返回一个排序数组（只是单纯排序)，如果传入的deep为yes则为深排序(排序，并按首字母分类）
++ (NSArray *)getSortArrayByArray:(NSArray *)inpuArray keyword:(NSString *)keyword deepSort:(BOOL)deep;
 
 
-//获取字符串首字母(传入汉字字符串, 返回大写拼音首字母)
+/// 获取字符串首字母(传入汉字字符串, 返回大写拼音首字母)
 + (NSString *)getFirstLetterFromString:(NSString *)aString;
 
-//model转化为字典
+/// model转化为字典
 + (NSDictionary *)dicFromObject:(NSObject *)object;
 
-
+//将可能存在model数组转化为普通数组
++ (id)getArrayOrDicWithObject:(id)origin;
 
 #pragma mark UI类
 /// 颜色渐变器
@@ -179,11 +147,8 @@ typedef NS_ENUM(NSInteger, MDMethod_APP_NAME) {
                                               colors:(NSArray *)colors
                                        seperatePoint:(NSArray *)points;
 
-/// code转image
-+ (UIImage *)generateQRCodeWith:(NSString *)code;
 
-/// code转image 并根据传入的size设置image
-+ (UIImage *)generateBarCodeWith:(NSString *)code size:(CGSize)size;
+
 
 /// 按钮设置 图片在上，文字在下
 + (void)setCustomButton:(UIButton *)button image:(NSString *)imageStr title:(NSString *)title titleColor:(UIColor *)color titleFont:(CGFloat)font interval:(CGFloat)interval;
@@ -209,21 +174,11 @@ typedef NS_ENUM(NSInteger, MDMethod_APP_NAME) {
 /// 给view添加通用的手势
 + (void)addNormalTapGesture:(UIView *)view target:(id)target action:(SEL)selection;
 
-/// 获取通用的MJRefreshNormalHeader
-+ (MJRefreshNormalHeader *)getMJRefreshNormalHeaderWithTarget:(id)target action:(SEL)action;
-
-/// 获取通用的MJRefreshAutoNormalFooter
-+ (MJRefreshAutoNormalFooter *)getMJRefreshAutoNormalFooterWithTarget:(id)target action:(SEL)action;
-
-/// 根据传入的nibname和frame获取view
+/// 根据传入的NibName和frame获取view
 + (UIView *)getNibViewByNibName:(NSString *)nibName frame:(CGRect)frame;
 
 /// 给textfield添加监听
 + (void)addMonitorForTextField:(UITextField *)textField fieldChangeHandle:(FieldChangeHandle)fieldChangeHandle;
-
-/// 查看大图
-+ (void)showDetailImage:(UIImage *)detailImage;
-+ (void)showDetailImageWithURL:(NSString *)imgUrl;
 
 /// 彩色图片转换为黑白图片
 + (UIImage*)grayImage:(UIImage*)sourceImage;
@@ -233,22 +188,5 @@ typedef NS_ENUM(NSInteger, MDMethod_APP_NAME) {
 
 /// 修改按钮图片颜色
 + (void)resetButtonImageViewTintColorWithImageView:(UIButton *)button image:(UIImage *)image tintcolor:(UIColor *)tintcoclor;
-
-/// 显示空白页面
-+ (void)showEmptViewWithEmptImage:(NSString *)emptImage emptStr:(NSString *)emptStr superView:(UIView *)superView;
-
-/// 删除空白页面
-+ (void)removeEmptViewFromSuperView:(UIView *)superView;
-
-
-#pragma mark 我的足迹（操作数据库）
-/// 添加一条数据到数据库表中
-+ (void)addGoodsToTableWithGoodsId:(NSString *)goodsId goodsName:(NSString *)goodsName goodsLogo:(NSString *)goodsLogo goodsPrice:(NSString *)goodsPrice goodsSales:(NSString *)goodsSales success:(MDFmdbSuccessHandler)success failure:(MDFmdbFailureHandler)failure;
-
-/// 取出数据
-+ (void)getGoodsFromTableWithPage:(NSInteger)page success:(void(^)(NSArray *goodsList))success failure:(MDFmdbFailureHandler)failure;
-
-/// 删除所有数据
-+ (void)deleteAllGoodsFromTableCompleteSuccess:(MDFmdbSuccessHandler)success failure:(MDFmdbFailureHandler)failure;
 
 @end
