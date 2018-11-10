@@ -10,6 +10,5 @@
 #define Winter_h
 
 #import "MDMethod.h"
-#import "QMainAlertView.h"
 
 #endif /* Winter_h */

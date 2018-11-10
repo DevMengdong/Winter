@@ -66,42 +66,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		991F432921957DE400EF2494 /* MDDetailImageView */ = {
-			isa = PBXGroup;
-			children = (
-				991F432B21957DE400EF2494 /* MDDetailImageView.h */,
-				991F432A21957DE400EF2494 /* MDDetailImageView.m */,
-			);
-			path = MDDetailImageView;
-			sourceTree = "<group>";
-		};
 		991F432D21957E1700EF2494 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		994916DD219663B3002DEA10 /* QMainPopUtil */ = {
-			isa = PBXGroup;
-			children = (
-				994916DF219663B3002DEA10 /* QMainPopUtil.h */,
-				994916E0219663B3002DEA10 /* QMainPopUtil.m */,
-				994916E1219663B3002DEA10 /* QMainPopLayoutConstraint.h */,
-				994916DE219663B3002DEA10 /* QMainPopLayoutConstraint.m */,
-			);
-			path = QMainPopUtil;
-			sourceTree = "<group>";
-		};
-		99491731219665A8002DEA10 /* QMainAlertView */ = {
-			isa = PBXGroup;
-			children = (
-				99491733219665A8002DEA10 /* QMainAlertView.h */,
-				99491735219665A8002DEA10 /* QMainAlertView.m */,
-				99491732219665A8002DEA10 /* QMainAlertViewStyleKit.h */,
-				99491734219665A8002DEA10 /* QMainAlertViewStyleKit.m */,
-			);
-			path = QMainAlertView;
 			sourceTree = "<group>";
 		};
 		99C594DF218AEC6400FBADEC = {
@@ -147,9 +116,16 @@
 				99C59502218AECBC00FBADEC /* MDMethod.m */,
 				99FEA3E8218BE64E000B2B39 /* MDevKit.h */,
 				99FEA3E9218BE64E000B2B39 /* MDevKit.m */,
-				991F432921957DE400EF2494 /* MDDetailImageView */,
-				99491731219665A8002DEA10 /* QMainAlertView */,
-				994916DD219663B3002DEA10 /* QMainPopUtil */,
+				991F432B21957DE400EF2494 /* MDDetailImageView.h */,
+				991F432A21957DE400EF2494 /* MDDetailImageView.m */,
+				99491733219665A8002DEA10 /* QMainAlertView.h */,
+				99491735219665A8002DEA10 /* QMainAlertView.m */,
+				99491732219665A8002DEA10 /* QMainAlertViewStyleKit.h */,
+				99491734219665A8002DEA10 /* QMainAlertViewStyleKit.m */,
+				994916DF219663B3002DEA10 /* QMainPopUtil.h */,
+				994916E0219663B3002DEA10 /* QMainPopUtil.m */,
+				994916E1219663B3002DEA10 /* QMainPopLayoutConstraint.h */,
+				994916DE219663B3002DEA10 /* QMainPopLayoutConstraint.m */,
 				991F432D21957E1700EF2494 /* Resource */,
 			);
 			path = MDMethod;
