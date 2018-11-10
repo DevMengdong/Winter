@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Winter"
-  s.version      = "1.0.2"
+  s.version      = "1.0.5"
   s.description  = "some method ObjectC"
   s.author       = { "limengdong" => "1903345463@qq.com" }
   s.homepage     = "https://github.com/DevMengdong/Winter"

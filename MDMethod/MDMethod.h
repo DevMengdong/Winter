@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "MDevKit.h"
+#import "QMainAlertView.h"
 
 typedef void(^FieldChangeHandle)(NSString *fieldOutput);
 
@@ -188,5 +189,21 @@ typedef NS_ENUM(NSInteger, MDMethod_APP_NAME) {
 
 /// 修改按钮图片颜色
 + (void)resetButtonImageViewTintColorWithImageView:(UIButton *)button image:(UIImage *)image tintcolor:(UIColor *)tintcoclor;
+
+/// 查看大图(根据传入的图片展示)
++ (void)showDetailImageWithImage:(UIImage *)detailImage;
+
+/// 查看大图(根据传入的url展示)
++ (void)showDetailImageWithUrl:(NSString *)imgUrl;
+
+/// 弹出提示框
++ (void)alertWithTitle:(NSString *)titleText
+               content:(NSString *)content
+          cancelButton:(NSString *)cancelButtonText
+          otherButtons:(NSArray*)otherButtonArray
+                 style:(QMainAlertViewStyle)style
+            parameters:(NSDictionary *)params
+           alertHandle:(QMainAlertHandle)alertHandle;
+
 
 @end

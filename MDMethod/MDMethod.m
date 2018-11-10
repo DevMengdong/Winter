@@ -9,12 +9,15 @@
 #import "MDMethod.h"
 #import <CommonCrypto/CommonDigest.h>
 #import <objc/runtime.h>
-//#import "QMainDetailImageView.h"
-//#import "QMainEmptView.h"
+#import "MDDetailImageView.h"
 
 @interface MDMethod()
 
 @property (nonatomic, copy) FieldChangeHandle fieldChangeHandle;
+
+@property (nonatomic, strong) MDDetailImageView *detailImageView;
+
+@property (nonatomic, strong) QMainAlertView *alertView;
 
 @end
 
@@ -1147,6 +1150,74 @@ static MDMethod *_instance;
     
     button.tintColor = tintcoclor;
     
+}
+
+/// 查看大图(根据传入的图片展示)
++ (void)showDetailImageWithImage:(UIImage *)detailImage; {
+    
+    if (detailImage == nil) {
+        
+        return;
+    }
+    
+    [[self shareMDMethodManager] showDetailImageWithImage:detailImage];
+}
+
+/// 查看大图(根据传入的url展示)
++ (void)showDetailImageWithUrl:(NSString *)imgUrl {
+    
+    if (MDKStringIsEmpty(imgUrl)) {
+        
+        return;
+    }
+    
+    UIImage *detailImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:imgUrl]]];
+    
+    if (detailImage == nil) {
+        
+        return;
+    }
+    
+    [[self shareMDMethodManager] showDetailImageWithImage:detailImage];
+}
+
+- (void)showDetailImageWithImage:(UIImage *)detailImage {
+    
+    self.detailImageView = [[MDDetailImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.detailImageView.detailImage = detailImage;
+    
+    [self.detailImageView show];
+}
+
+/// 弹出提示框
++ (void)alertWithTitle:(NSString *)titleText
+               content:(NSString *)content
+          cancelButton:(NSString *)cancelButtonText
+          otherButtons:(NSArray*)otherButtonArray
+                 style:(QMainAlertViewStyle)style
+            parameters:(NSDictionary *)params
+           alertHandle:(QMainAlertHandle)alertHandle {
+    
+    [[self shareMDMethodManager] alertWithTitle:titleText content:content cancelButton:cancelButtonText otherButtons:otherButtonArray style:style parameters:params alertHandle:alertHandle];
+}
+
+/// 弹出提示框
+- (void)alertWithTitle:(NSString *)titleText
+               content:(NSString *)content
+          cancelButton:(NSString *)cancelButtonText
+          otherButtons:(NSArray*)otherButtonArray
+                 style:(QMainAlertViewStyle)style
+            parameters:(NSDictionary *)params
+           alertHandle:(QMainAlertHandle)alertHandle {
+    
+    self.alertView = [[QMainAlertView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    [self.alertView setAlertWithTitle:@"aaa" andContent:@"aaaa" andCancelButton:@"aaa" andOtherButtons:@[@"bbb"] style:style parameters:nil alertHandle:^(NSInteger selectIndex) {
+        
+        alertHandle(selectIndex);
+    }];
+    
+    [self.alertView show];
 }
 
 @end

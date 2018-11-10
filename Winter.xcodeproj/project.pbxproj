@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A68F4BBF22D921C6391288C /* libPods-Winter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC05A1856F9E632972AD2210 /* libPods-Winter.a */; };
+		991F432C21957DE400EF2494 /* MDDetailImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F432A21957DE400EF2494 /* MDDetailImageView.m */; };
+		994916E2219663B3002DEA10 /* QMainPopLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 994916DE219663B3002DEA10 /* QMainPopLayoutConstraint.m */; };
+		994916E3219663B3002DEA10 /* QMainPopUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 994916E0219663B3002DEA10 /* QMainPopUtil.m */; };
+		9949173B219665A8002DEA10 /* QMainAlertViewStyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 99491734219665A8002DEA10 /* QMainAlertViewStyleKit.m */; };
+		9949173C219665A8002DEA10 /* QMainAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99491735219665A8002DEA10 /* QMainAlertView.m */; };
 		99C594ED218AEC6500FBADEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C594EC218AEC6500FBADEC /* AppDelegate.m */; };
 		99C594F0218AEC6500FBADEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C594EF218AEC6500FBADEC /* ViewController.m */; };
 		99C594F3218AEC6500FBADEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C594F1218AEC6500FBADEC /* Main.storyboard */; };
@@ -18,6 +24,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DA477727A6466D15156329A /* Pods-Winter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Winter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Winter/Pods-Winter.release.xcconfig"; sourceTree = "<group>"; };
+		7B4B072C084C4615A688F08E /* Pods-Winter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Winter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Winter/Pods-Winter.debug.xcconfig"; sourceTree = "<group>"; };
+		991F432A21957DE400EF2494 /* MDDetailImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDetailImageView.m; sourceTree = "<group>"; };
+		991F432B21957DE400EF2494 /* MDDetailImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDetailImageView.h; sourceTree = "<group>"; };
+		994916DE219663B3002DEA10 /* QMainPopLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMainPopLayoutConstraint.m; sourceTree = "<group>"; };
+		994916DF219663B3002DEA10 /* QMainPopUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMainPopUtil.h; sourceTree = "<group>"; };
+		994916E0219663B3002DEA10 /* QMainPopUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMainPopUtil.m; sourceTree = "<group>"; };
+		994916E1219663B3002DEA10 /* QMainPopLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMainPopLayoutConstraint.h; sourceTree = "<group>"; };
+		99491732219665A8002DEA10 /* QMainAlertViewStyleKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMainAlertViewStyleKit.h; sourceTree = "<group>"; };
+		99491733219665A8002DEA10 /* QMainAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMainAlertView.h; sourceTree = "<group>"; };
+		99491734219665A8002DEA10 /* QMainAlertViewStyleKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMainAlertViewStyleKit.m; sourceTree = "<group>"; };
+		99491735219665A8002DEA10 /* QMainAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMainAlertView.m; sourceTree = "<group>"; };
+		9949173F219677B5002DEA10 /* Winter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Winter.h; sourceTree = "<group>"; };
 		99C594E8218AEC6500FBADEC /* Winter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Winter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C594EB218AEC6500FBADEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		99C594EC218AEC6500FBADEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -32,6 +51,7 @@
 		99C59505218AECBC00FBADEC /* MDMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDMethod.h; sourceTree = "<group>"; };
 		99FEA3E8218BE64E000B2B39 /* MDevKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDevKit.h; sourceTree = "<group>"; };
 		99FEA3E9218BE64E000B2B39 /* MDevKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDevKit.m; sourceTree = "<group>"; };
+		EC05A1856F9E632972AD2210 /* libPods-Winter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Winter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,18 +59,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A68F4BBF22D921C6391288C /* libPods-Winter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		991F432921957DE400EF2494 /* MDDetailImageView */ = {
+			isa = PBXGroup;
+			children = (
+				991F432B21957DE400EF2494 /* MDDetailImageView.h */,
+				991F432A21957DE400EF2494 /* MDDetailImageView.m */,
+			);
+			path = MDDetailImageView;
+			sourceTree = "<group>";
+		};
+		991F432D21957E1700EF2494 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		994916DD219663B3002DEA10 /* QMainPopUtil */ = {
+			isa = PBXGroup;
+			children = (
+				994916DF219663B3002DEA10 /* QMainPopUtil.h */,
+				994916E0219663B3002DEA10 /* QMainPopUtil.m */,
+				994916E1219663B3002DEA10 /* QMainPopLayoutConstraint.h */,
+				994916DE219663B3002DEA10 /* QMainPopLayoutConstraint.m */,
+			);
+			path = QMainPopUtil;
+			sourceTree = "<group>";
+		};
+		99491731219665A8002DEA10 /* QMainAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				99491733219665A8002DEA10 /* QMainAlertView.h */,
+				99491735219665A8002DEA10 /* QMainAlertView.m */,
+				99491732219665A8002DEA10 /* QMainAlertViewStyleKit.h */,
+				99491734219665A8002DEA10 /* QMainAlertViewStyleKit.m */,
+			);
+			path = QMainAlertView;
+			sourceTree = "<group>";
+		};
 		99C594DF218AEC6400FBADEC = {
 			isa = PBXGroup;
 			children = (
 				99C59501218AECBC00FBADEC /* MDMethod */,
 				99C594EA218AEC6500FBADEC /* Winter */,
 				99C594E9218AEC6500FBADEC /* Products */,
+				B6C484735ECCDCF367807ED3 /* Pods */,
+				F390D01BAEC9E3401CE65B8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,12 +142,34 @@
 		99C59501218AECBC00FBADEC /* MDMethod */ = {
 			isa = PBXGroup;
 			children = (
+				9949173F219677B5002DEA10 /* Winter.h */,
 				99C59505218AECBC00FBADEC /* MDMethod.h */,
 				99C59502218AECBC00FBADEC /* MDMethod.m */,
 				99FEA3E8218BE64E000B2B39 /* MDevKit.h */,
 				99FEA3E9218BE64E000B2B39 /* MDevKit.m */,
+				991F432921957DE400EF2494 /* MDDetailImageView */,
+				99491731219665A8002DEA10 /* QMainAlertView */,
+				994916DD219663B3002DEA10 /* QMainPopUtil */,
+				991F432D21957E1700EF2494 /* Resource */,
 			);
 			path = MDMethod;
+			sourceTree = "<group>";
+		};
+		B6C484735ECCDCF367807ED3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B4B072C084C4615A688F08E /* Pods-Winter.debug.xcconfig */,
+				0DA477727A6466D15156329A /* Pods-Winter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F390D01BAEC9E3401CE65B8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC05A1856F9E632972AD2210 /* libPods-Winter.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +179,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99C594FE218AEC6600FBADEC /* Build configuration list for PBXNativeTarget "Winter" */;
 			buildPhases = (
+				DA8F6E50D51480B8F2AAE6DD /* [CP] Check Pods Manifest.lock */,
 				99C594E4218AEC6400FBADEC /* Sources */,
 				99C594E5218AEC6400FBADEC /* Frameworks */,
 				99C594E6218AEC6400FBADEC /* Resources */,
@@ -154,15 +238,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DA8F6E50D51480B8F2AAE6DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Winter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		99C594E4218AEC6400FBADEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				99FEA3EA218BE64E000B2B39 /* MDevKit.m in Sources */,
+				9949173B219665A8002DEA10 /* QMainAlertViewStyleKit.m in Sources */,
+				9949173C219665A8002DEA10 /* QMainAlertView.m in Sources */,
 				99C594F0218AEC6500FBADEC /* ViewController.m in Sources */,
 				99C594FB218AEC6600FBADEC /* main.m in Sources */,
 				99C594ED218AEC6500FBADEC /* AppDelegate.m in Sources */,
+				994916E3219663B3002DEA10 /* QMainPopUtil.m in Sources */,
+				994916E2219663B3002DEA10 /* QMainPopLayoutConstraint.m in Sources */,
+				991F432C21957DE400EF2494 /* MDDetailImageView.m in Sources */,
 				99C59509218AECBC00FBADEC /* MDMethod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,11 +411,13 @@
 		};
 		99C594FF218AEC6600FBADEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B4B072C084C4615A688F08E /* Pods-Winter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67Q9MLFAD9;
 				INFOPLIST_FILE = Winter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,11 +430,13 @@
 		};
 		99C59500218AEC6600FBADEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DA477727A6466D15156329A /* Pods-Winter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 67Q9MLFAD9;
 				INFOPLIST_FILE = Winter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
