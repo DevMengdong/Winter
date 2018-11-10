@@ -36,7 +36,6 @@
 		99491733219665A8002DEA10 /* QMainAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMainAlertView.h; sourceTree = "<group>"; };
 		99491734219665A8002DEA10 /* QMainAlertViewStyleKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMainAlertViewStyleKit.m; sourceTree = "<group>"; };
 		99491735219665A8002DEA10 /* QMainAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMainAlertView.m; sourceTree = "<group>"; };
-		9949173F219677B5002DEA10 /* Winter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Winter.h; sourceTree = "<group>"; };
 		99C594E8218AEC6500FBADEC /* Winter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Winter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99C594EB218AEC6500FBADEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		99C594EC218AEC6500FBADEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,7 +110,6 @@
 		99C59501218AECBC00FBADEC /* MDMethod */ = {
 			isa = PBXGroup;
 			children = (
-				9949173F219677B5002DEA10 /* Winter.h */,
 				99C59505218AECBC00FBADEC /* MDMethod.h */,
 				99C59502218AECBC00FBADEC /* MDMethod.m */,
 				99FEA3E8218BE64E000B2B39 /* MDevKit.h */,
